@@ -1,7 +1,4 @@
-package com.dacer.androidcharts;
-
-import java.util.ArrayList;
-import java.util.Collections;
+package im.dacer.androidcharts;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -15,9 +12,11 @@ import android.graphics.Rect;
 import android.graphics.Region;
 import android.graphics.drawable.NinePatchDrawable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+
+import java.util.ArrayList;
+import java.util.Collections;
 
 
 /**
@@ -174,7 +173,7 @@ public class LineView extends View {
     /**
      *
      * @param dataLists The Integer ArrayLists for showing,
-     *                 dataList.size() must < bottomTextList.size()
+     *                 dataList.size() must be smaller than bottomTextList.size()
      */
     public void setDataList(ArrayList<ArrayList<Integer>> dataLists){
     	selectedDot = null;
